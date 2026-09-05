@@ -1,2 +1,3 @@
 # random-ah-website
-THIS NEW EXPERIMENT IS VERY VERY INTERESTING
+
+Random Ah Website is a repository for the addon class for Full Stack Development.
