@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at top, #1e293b 0%, #0f172a 40%, #020817 100%);
+    color: #e2e8f0;
+}
+
+.game {
+    width: min(92vw, 560px);
+    padding: 2.25rem 1.5rem;
+    border-radius: 24px;
+    text-align: center;
+    background: rgba(15, 23, 42, 0.72);
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    box-shadow: 0 24px 70px rgba(15, 23, 42, 0.55);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    margin: 0 0 1.75rem;
+    font-size: clamp(2.1rem, 5vw, 3rem);
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    color: #f8fafc;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    border: none;
+    border-radius: 14px;
+    padding: 0.95rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    color: #0f172a;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+    box-shadow: 0 10px 22px rgba(15, 23, 42, 0.22);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.05);
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.28);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#rock {
+    background: linear-gradient(135deg, #80aef3, #3486f1);
+}
+
+#paper {
+    background: linear-gradient(135deg, #d2deee, #55575a);
+}
+
+#scissors {
+    background: linear-gradient(135deg, #dcfce7, #4ade80);
+}
+
+#result {
+    min-height: 3rem;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #e2e8f0;
+    line-height: 1.5;
+}
